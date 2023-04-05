@@ -1,2 +1,2 @@
 @echo off
-hexo cl&&hexo algolia&&hexo se
+hexo cl&&hexo se
