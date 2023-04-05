@@ -99,8 +99,33 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 markdown:
-    plugins:
-      - '@renbaoshuo/markdown-it-katex'
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: ''
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-footnote
+    - '@renbaoshuo/markdown-it-katex'
+    - name: markdown-it-container
+      options: 
+        danger
+    - name: markdown-it-container
+      options: 
+        success
+    - name: markdown-it-container
+      options: 
+        tips
+    - name: markdown-it-container
+      options: 
+        warning
 abbrlink:
   alg: crc32      #support crc16(default) and crc32
   rep: hex        #support dec(default) and hex

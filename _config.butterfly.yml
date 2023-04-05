@@ -891,6 +891,7 @@ inject:
     - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.min.css">
     - <link rel="stylesheet" href="https://cdn.staticfile.org/firacode/6.2.0/fira_code.min.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/noto-sans-sc@26.0.0/all.css">
+    - <link rel="stylesheet" href="https://cdn.staticaly.com/gh/LynxCatTheThird/web-v2/main/themes/particlex/source/css/custom/markdown-it-container.css">
   bottom:
     # - <script src="xxxx"></script>
 
