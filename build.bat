@@ -1,2 +1,2 @@
 @echo off
-hexo cl&&hexo algolia&&hexo g&&hexo swpp&&hexo d&&hexo cl&&pause
+hexo cl&&hexo g&&hexo algolia&&hexo swpp&&hexo d&&hexo cl&&pause

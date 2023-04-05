@@ -1,23 +1,27 @@
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
-    - name: Hexo
-      link: https://hexo.io/zh-tw/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、简单且强大的网志框架
-
-- class_name: 网站
-  class_desc: 值得推荐的网站
-  link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 视频网站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中国最大社交分享平台
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
+    - name: Argvchs
+      link: https://argvchs.netlify.app/
+      avatar: https://static-argvchs.netlify.app/images/avatar.jpg
+      descr: Here's an argvchs...
+    - name: 山岳库博
+      link: https://kmar.top/
+      avatar: https://fastly.jsdelivr.net/npm/@kmar/fonts/avatar/own.png
+      descr: 开发学习启发性二刺螈
+    - name: HiPeach
+      link: https://opeach.cn/
+      avatar: https://opeach.cn/media/avatar.webp
+      descr: 妙不可言
+    - name: Shine
+      link: https://blog.shineyu.cn/
+      avatar: https://s3.bmp.ovh/imgs/2022/11/23/129c19d56d22c637.png
+      descr: Let's go! Target, The Vast Stars!
+    - name: Marcus
+      link: https://blog.marcus233.top/
+      avatar: https://img01.anzhiy.cn/useruploads/8/2022/12/15/639adf5b8806a.png
+      descr: 人间值得，未来可期
+    - name: 蓝幽呀
+      link: https://lanyou.me/
+      avatar: https://lanyou.me/image/2.jpg
+      descr: 生活
