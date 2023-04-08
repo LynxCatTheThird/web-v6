@@ -612,7 +612,7 @@ font:
   global-font-size:
   code-font-size:
   font-family: HarmonyOS_Medium, "Noto Sans SC", "LXGW WenKai", "Microsoft YaHei", sans-serif
-  code-font-family: consolas, "Fira Code", "LXGW WenKai Mono", monospace
+  code-font-family: consolas, "Fira Code", HarmonyOS_Medium, "Noto Sans SC", monospace
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -677,7 +677,7 @@ aside:
       link: https://github.com/LynxCatTheThird
   card_announcement:
     enable: true
-    content: 重置中……
+    content: Rebuilding...
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -816,14 +816,14 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -891,9 +891,10 @@ inject:
     - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.min.css">
     - <link rel="stylesheet" href="https://cdn.staticfile.org/firacode/6.2.0/fira_code.min.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/noto-sans-sc@26.0.0/all.css">
-    - <link rel="stylesheet" href="https://cdn.staticaly.com/gh/LynxCatTheThird/web-v2/main/themes/particlex/source/css/custom/markdown-it-container.css">
+    - <link rel="stylesheet" href="https://lynx-static.netlify.app/css/markdown-it-container.css">
+    - <script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
   bottom:
-    # - <script src="xxxx"></script>
+    -  <div class="aplayer no-destroy" data-id="1456021291" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -956,7 +957,7 @@ CDN:
     # snackbar_css:
     # snackbar:
     # activate_power_mode:
-    # fireworks:
+    fireworks: https://lynx-static.netlify.app/js/firework.js
     # click_heart:
     # ClickShowText:
     # fontawesomeV6:
