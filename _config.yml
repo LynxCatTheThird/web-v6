@@ -211,8 +211,8 @@ swpp:
     timeout: 1500
     # 见 https://kmar.top/posts/73014407/#771b3e00
     js:
-      - head: '这里写 head 内容'
-        tail: '这里写 tail 内容（必须有 tail）'
+      - head: 'getScript\('
+        tail: '\)'
     # 某些外链只要 URL 不变其内容就一定不会变
     # 可以通过正则表达式排除这些外链的文件内容监控，加快构建速度
     # 下面是几个常用的 CDN 的匹配
