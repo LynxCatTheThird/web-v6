@@ -722,14 +722,14 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family: Lexend, HarmonyOS_Medium, "Noto Sans SC", "LXGW WenKai", "Microsoft YaHei", sans-serif
+  font-family: Lexend, HarmonyOS_Medium, "Noto Sans SC", "Microsoft YaHei", "微软雅黑", "LXGW WenKai", sans-serif
   code-font-family: consolas, "Fira Code", HarmonyOS_Medium, "Noto Sans SC", monospace
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link:
-  font-family: Lexend, HarmonyOS_Medium, "Noto Sans SC", "LXGW WenKai", "Microsoft YaHei", sans-serif
+  font-family: Lexend, HarmonyOS_Medium, "Noto Sans SC", "Microsoft YaHei", "微软雅黑", "LXGW WenKai", sans-serif
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -895,7 +895,7 @@ css_prefix: true
 inject:
   head:
     - <meta name="referrer" content="no-referrer">
-        - <script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
+    - <script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
     - <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/medium.css">
     - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.min.css">
     - <link rel="stylesheet" href="https://cdn.staticfile.org/firacode/6.2.0/fira_code.min.css">
