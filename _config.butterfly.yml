@@ -958,7 +958,7 @@ CDN:
     # canvas_nest:
     # lazyload:
     # instantpage:
-    # typed:
+    typed: https://lynx-static.netlify.app/js/typed.umd.js
     # pangu:
     # fancybox_css:
     # fancybox:
