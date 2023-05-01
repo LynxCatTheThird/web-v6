@@ -227,7 +227,7 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
+      text: Follow Me!
       link: https://github.com/LynxCatTheThird
   card_announcement:
     enable: true
@@ -318,7 +318,7 @@ darkmode:
   end: # 22
 
 # show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work (非必要請不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -352,19 +352,19 @@ katex:
 
 # Algolia search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 6
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # Preload the search data when the page loads.
   preload: false
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   # Unescape html strings to the readable one.
-  unescape: false
+  unescape: true
   CDN:
 
 # Docsearch
@@ -388,7 +388,7 @@ addThis:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,weibo,qq,qzone,facebook,twitter
 
 # AddToAny
 # https://www.addtoany.com/
@@ -408,7 +408,7 @@ comments:
   # If you set it to true, the comment count will be invalid
   lazyload: true
   count: true # Display comment count in post's top_img
-  card_post_count: true # Display comment count in Home Page
+  card_post_count: false # Display comment count in Home Page
 
 # disqus
 # https://disqus.com/
@@ -662,7 +662,7 @@ activate_power_mode:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -671,7 +671,7 @@ canvas_ribbon:
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
-  enable: false
+  enable: true
   mobile: false
 
 # canvas_nest
@@ -722,14 +722,14 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family: Lexend, HarmonyOS_Medium, "Noto Sans SC", "Microsoft YaHei", "微软雅黑", "LXGW WenKai", sans-serif
+  font-family: Lexend, HarmonyOS_Medium, "Noto Sans SC", "Microsoft YaHei", "微软雅黑", sans-serif
   code-font-family: consolas, "Fira Code", HarmonyOS_Medium, "Noto Sans SC", monospace
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link:
-  font-family: Lexend, HarmonyOS_Medium, "Noto Sans SC", "Microsoft YaHei", "微软雅黑", "LXGW WenKai", sans-serif
+  font-family: Lexend, HarmonyOS_Medium, "Noto Sans SC", "Microsoft YaHei", "微软雅黑", sans-serif
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -897,18 +897,11 @@ inject:
     - <meta name="referrer" content="no-referrer">
     - <script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
     - <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/medium.css">
-    - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.min.css">
     - <link rel="stylesheet" href="https://cdn.staticfile.org/firacode/6.2.0/fira_code.min.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/noto-sans-sc@26.0.0/all.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/900.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/800.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/700.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/600.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/500.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/400.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/300.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/200.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/100.css">
     - <link rel="stylesheet" href="https://lynx-static.netlify.app/css/markdown-it-container.css">
   bottom:
 
@@ -989,5 +982,5 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
-    # busuanzi:
+    busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
     # abcjs_basic_js:

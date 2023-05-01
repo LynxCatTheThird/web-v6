@@ -21,7 +21,8 @@ module.exports.cacheList = {
                 case 'vc.lynxcatthethird.eu.org': case 'person-vercel.vercel.app':
                 case 'lynxcatthethird-person.pages.dev': case 'cf.lynxcatthethird.eu.org':
                 case 'lynxcatthethird-person.netlify.app': case 'nl.lynxcatthethird.eu.org':
-                    return url.pathname.match(/\.(woff2|ttf|js|css)$/)
+                case '127.0.0.1': case 'localhost':
+                    return url.pathname.match(/\.(xml|woff2|ttf|js|css)$/)
                 default: return false
             }
         }
