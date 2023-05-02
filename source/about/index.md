@@ -33,6 +33,8 @@ int main(){
 |Vercel|[https://lynxcatthethird-person.vercel.app/](https://lynxcatthethird-person.vercel.app/)|[https://vc.lynxcatthethird.eu.org/](https://vc.lynxcatthethird.eu.org/)|
 |Cloudflare Pages|[https://lynxcatthethird-person.pages.dev/](https://lynxcatthethird-person.pages.dev/)|[https://cf.lynxcatthethird.eu.org/](https://cf.lynxcatthethird.eu.org/)|
 |RailWay|https://lynxcatthethird-person.up.railway.app/|https://rw.lynxcatthethird.eu.org/|
+|BitBucket|https://lynx-web.bitbucket.io/|不支持|
+
 
 用作日常发文、技术发文、闲聊、随笔等日常用途
 
