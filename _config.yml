@@ -174,5 +174,5 @@ deploy:
     repository: git@github.com:ara1145/ara1145.github.io.git
     branch: main
   - type: git
-    repository: git@bitbucket.org:lynx-web/html.git
+    repository: git@bitbucket.org:lynx-web/lynx-web.bitbucket.io.git
     branch: main
