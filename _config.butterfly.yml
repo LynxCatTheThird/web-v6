@@ -243,7 +243,7 @@ aside:
       link: https://github.com/LynxCatTheThird
   card_announcement:
     enable: true
-    content: 重建工作基本完成。Twikoo 的邮件提醒也修好了！
+    content: 重建工作完成！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -492,7 +492,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo.lynxcatthethird.eu.org/
+  envId: https://lynxcatthethird-twikoo.zeabur.app/
   region:
   visitor: false
   option:
