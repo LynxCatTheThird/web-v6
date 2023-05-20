@@ -1,9 +1,14 @@
 ---
 title: 在5分钟内让VS Code可以运行代码
-categories: 工具
+categories:
+  - 技术
+  - 计算机
+  - 工具
 tags:
   - 编程
   - 工具
+cover: >-
+  https://article.biliimg.com/bfs/article/20323dcb19fd18b2c5b6f50c534a439d08cd558e.jpg
 abbrlink: 748f9323
 date: 2022-12-07 08:00:29
 update: 2023-01-03 15:41:15

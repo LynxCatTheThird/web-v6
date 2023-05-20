@@ -652,7 +652,7 @@ tag_ui: # 留空或 index
 background:
 
 # Footer Background
-footer_bg: false
+footer_bg: linear-gradient(135deg,#00EAFF 10%,#3C8CE7 100%)
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -803,8 +803,8 @@ fancybox: true
 # abcjs (樂譜渲染)
 # See https://github.com/paulrosen/abcjs
 abcjs:
-  enable: true
-  per_page: true
+  enable: false
+  per_page: false
 
 # mermaid
 # see https://github.com/mermaid-js/mermaid
@@ -822,7 +822,7 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: flat
+  style: simple
   icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
@@ -899,7 +899,7 @@ Open_Graph_meta:
     # fb_app_id:
 
 # Add the vendor prefixes to ensure compatibility
-css_prefix: true
+css_prefix: false
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
@@ -914,7 +914,6 @@ inject:
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/600.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/500.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/400.css">
-    - <link rel="stylesheet" href="https://lynx-static.netlify.app/css/markdown-it-container.css">
   bottom:
 
 
