@@ -34,4 +34,4 @@ int main(){
 |Cloudflare Pages [^1]|[https://lynxcatthethird-person.pages.dev/](https://lynxcatthethird-person.pages.dev/)|[https://cf.lynxcatthethird.eu.org/](https://cf.lynxcatthethird.eu.org/)|
 |RailWay|https://lynxcatthethird-person.up.railway.app/|https://rw.lynxcatthethird.eu.org/|
 
-[^1]: Cloudflare Pages不能与其它
+[^1]: Cloudflare Pages不能与其它平台同步评论，因此不建议在 Cloudflare Pages 镜像站上评论。

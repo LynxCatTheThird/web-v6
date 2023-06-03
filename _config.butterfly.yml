@@ -888,7 +888,7 @@ lazyload:
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
 Open_Graph_meta:
-  enable: true
+  enable: false
   option:
     # twitter_card:
     # twitter_image:
@@ -913,7 +913,6 @@ inject:
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/500.css">
     - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/400.css">
   bottom:
-
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -983,9 +982,9 @@ CDN:
     # fontawesome:
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
-    # aplayer_css: https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css
-    # aplayer_js: https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js
-    # meting_js: https://cdn.staticfile.org/meting/2.0.1/Meting.min.js
+    aplayer_css: https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css
+    aplayer_js: https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js
+    meting_js: https://cdn.staticfile.org/meting/2.0.1/Meting.min.js
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
