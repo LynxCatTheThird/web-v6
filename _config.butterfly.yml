@@ -908,10 +908,11 @@ inject:
   head:
     - <meta name="referrer" content="no-referrer">
     - <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/medium.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/700.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/600.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/500.css">
-    - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@4.5.15/400.css">
+    - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap">
+    # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-700.css">
+    # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-600.css">
+    # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-500.css">
+    # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-400.css">
   bottom:
 
 # CDN
