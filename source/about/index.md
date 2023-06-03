@@ -31,5 +31,7 @@ int main(){
 |Netlify|[https://lynxcatthethird-person.netlify.app/](https://lynxcatthethird-person.netlify.app/)|[https://nl.lynxcatthethird.eu.org/](https://nl.lynxcatthethird.eu.org/)|
 |Netlify 2|[https://lynxcatthethird-person-2.netlify.app/](https://lynxcatthethird-person-2.netlify.app/)|已被 `Netlify` 被占用|
 |Vercel|[https://lynxcatthethird-person.vercel.app/](https://lynxcatthethird-person.vercel.app/)|[https://vc.lynxcatthethird.eu.org/](https://vc.lynxcatthethird.eu.org/)|
-|Cloudflare Pages|[https://lynxcatthethird-person.pages.dev/](https://lynxcatthethird-person.pages.dev/)|[https://cf.lynxcatthethird.eu.org/](https://cf.lynxcatthethird.eu.org/)|
+|Cloudflare Pages [^1]|[https://lynxcatthethird-person.pages.dev/](https://lynxcatthethird-person.pages.dev/)|[https://cf.lynxcatthethird.eu.org/](https://cf.lynxcatthethird.eu.org/)|
 |RailWay|https://lynxcatthethird-person.up.railway.app/|https://rw.lynxcatthethird.eu.org/|
+
+[^1]: Cloudflare Pages不能与其它
