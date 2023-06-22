@@ -13,7 +13,9 @@ menu:
   时间线: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  友链: /link/ || fas fa-link
+  交流||fas fa-list:
+    友链: /link/ || fas fa-link
+    留言板: /comment/ || fas fa-comment-dots
   关于||fas fa-list:
     关于我: /about/ || fas fa-user
     鸣谢: /thanks/ || fas fa-heart
@@ -654,6 +656,11 @@ background:
 # Footer Background
 footer_bg: linear-gradient(135deg,#00EAFF 10%,#3C8CE7 100%)
 
+# Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
+mask:
+  header: true
+  footer: true
+
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
 
@@ -809,7 +816,7 @@ abcjs:
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: true
+  enable: false
   # built-in themes: default/forest/dark/neutral
   theme:
     light: default
