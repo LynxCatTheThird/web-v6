@@ -5,7 +5,7 @@ date: 2022-12-07 07:48:09
 
 ## 关于我
 
-``` cpp
+```cpp
 #include <cstdio>
 #include <string>
 using namespace std;
@@ -24,14 +24,11 @@ int main(){
 
 ## 关于小站
 
-|部署平台|源地址|自定义域名|
-|:-:|:-----------------------|:-|
-|Github|[https://lynxcatthethird.github.io/](https://lynxcatthethird.github.io/)|重新部署会杀掉自定义域名，很麻烦|
-|Github 2|[https://ara1145.github.io/](https://ara1145.github.io/)|同上|
-|Netlify|[https://lynxcatthethird-person.netlify.app/](https://lynxcatthethird-person.netlify.app/)|[https://nl.lynxcatthethird.eu.org/](https://nl.lynxcatthethird.eu.org/)|
-|Netlify 2|[https://lynxcatthethird-person-2.netlify.app/](https://lynxcatthethird-person-2.netlify.app/)|已被 `Netlify` 被占用|
-|Vercel|[https://lynxcatthethird-person.vercel.app/](https://lynxcatthethird-person.vercel.app/)|[https://vc.lynxcatthethird.eu.org/](https://vc.lynxcatthethird.eu.org/)|
-|Cloudflare Pages [^1]|[https://lynxcatthethird-person.pages.dev/](https://lynxcatthethird-person.pages.dev/)|[https://cf.lynxcatthethird.eu.org/](https://cf.lynxcatthethird.eu.org/)|
-|RailWay|https://lynxcatthethird-person.up.railway.app/|https://rw.lynxcatthethird.eu.org/|
-
-[^1]: Cloudflare Pages不能与其它平台同步评论，因此不建议在 Cloudflare Pages 镜像站上评论。
+|     部署平台     | 源地址                                                                                         | 自定义域名                                                               |
+| :--------------: | :--------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
+|      Github      | [https://lynxcatthethird.github.io/](https://lynxcatthethird.github.io/)                       | 重新部署会杀掉自定义域名，很麻烦                                         |
+|     Github 2     | [https://ara1145.github.io/](https://ara1145.github.io/)                                       | 同上                                                                     |
+|     Netlify      | [https://lynxcatthethird-person.netlify.app/](https://lynxcatthethird-person.netlify.app/)     | [https://nl.lynxcatthethird.eu.org/](https://nl.lynxcatthethird.eu.org/) |
+|    Netlify 2     | [https://lynxcatthethird-person-2.netlify.app/](https://lynxcatthethird-person-2.netlify.app/) | 已被 `Netlify` 被占用                                                    |
+|      Vercel      | [https://lynxcatthethird-person.vercel.app/](https://lynxcatthethird-person.vercel.app/)       | [https://vc.lynxcatthethird.eu.org/](https://vc.lynxcatthethird.eu.org/) |
+| Cloudflare Pages | [https://lynxcatthethird-person.pages.dev/](https://lynxcatthethird-person.pages.dev/)         | [https://cf.lynxcatthethird.eu.org/](https://cf.lynxcatthethird.eu.org/) |
