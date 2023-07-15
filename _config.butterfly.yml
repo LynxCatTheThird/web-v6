@@ -737,16 +737,16 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
-  code-font-size:
-  font-family: Lexend, HarmonyOS_Medium, sans-serif
-  code-font-family: consolas, "Fira Code", monospace, HarmonyOS_Medium, sans-serif
+  global-font-size: 15px
+  code-font-size: 15px
+  font-family: ZhuDouSans, "LXGW WenKai Screen", sans-serif
+  code-font-family: ZhuDouSans, "LXGW WenKai Mono", "LXGW WenKai Screen", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link:
-  font-family: Lexend, HarmonyOS_Medium
+  font-family: ZhuDouSans, "LXGW WenKai Screen"
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -919,8 +919,10 @@ css_prefix: true
 inject:
   head:
     - <meta name="referrer" content="no-referrer">
-    - <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/medium.css">
-    - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap">
+    - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
+    - <style type="text/css">@font-face{font-family:'ZhuDouSans';font-display:swap;src:url(https://jsd.onmicrosoft.cn/gh/Buernia/Zhudou-Sans@main/fonts/webfont/ZhudouSansVF.woff2) format('woff2')}</style>
+    # - <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/medium.css">
+    # - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap">
     # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-700.css">
     # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-600.css">
     # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-500.css">
