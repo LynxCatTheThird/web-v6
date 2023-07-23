@@ -15,7 +15,8 @@ menu:
   分类: /categories/ || fas fa-folder-open
   交流||fas fa-list:
     友链: /link/ || fas fa-link
-    留言板: /comment/ || fas fa-comment-dots
+    留言板: /comment/ || fas fa-share-nodes
+    说说: /talk/ || fas fa-comment-dots
   关于||fas fa-list:
     关于我: /aboutme/ || fas fa-user
     关于小站: /aboutsite/ || fas fa-earth-americas
@@ -808,7 +809,7 @@ fancybox: true
 
 # series (系列文章)
 series:
-  enable: true
+  enable: false
   orderBy: 'title' # Order by title or date
   order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
   number: true
@@ -835,7 +836,7 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
+  style: flat
   icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
@@ -871,7 +872,7 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: true
+instantpage: false
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -1011,5 +1012,5 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
-    busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+    busuanzi: https://busuanzi.icodeq.com/busuanzi.pure.mini.js
     # abcjs_basic_js:
