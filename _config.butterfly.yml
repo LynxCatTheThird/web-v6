@@ -15,9 +15,11 @@ menu:
   分类: /categories/ || fas fa-folder-open
   交流||fas fa-list:
     友链: /link/ || fas fa-link
-    留言板: /comment/ || fas fa-comment-dots
+    留言板: /comment/ || fas fa-share-nodes
+    说说: /talk/ || fas fa-comment-dots
   关于||fas fa-list:
-    关于我: /about/ || fas fa-user
+    关于我: /aboutme/ || fas fa-user
+    关于小站: /aboutsite/ || fas fa-earth-americas
     鸣谢: /thanks/ || fas fa-heart
     条款与政策: /policy/ || fas fa-envelope-open-text
 
@@ -53,17 +55,17 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://s1.hdslb.com/bfs/article/03f617329abf8a76f02a7a95db24a0eff8e0c6e2.jpg@1e_1c.webp
+index_img: https://s2.hdslb.com/bfs/article/03f617329abf8a76f02a7a95db24a0eff8e0c6e2.jpg@1e_1c.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://s1.hdslb.com/bfs/article/44385dbc33d77db6ebf7daee2eb3da2e34415618.jpg@1e_1c.webp
+default_top_img: https://s2.hdslb.com/bfs/article/44385dbc33d77db6ebf7daee2eb3da2e34415618.jpg@1e_1c.webp
 
 # The banner image of archive page
-archive_img: https://s1.hdslb.com/bfs/article/af02e5189cac3c20945b0b55d4a04a10ddfc4dd9.jpg@1e_1c.webp
+archive_img: https://s2.hdslb.com/bfs/article/af02e5189cac3c20945b0b55d4a04a10ddfc4dd9.jpg@1e_1c.webp
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://s1.hdslb.com/bfs/article/1108cdec5c3ccbd7195e1fc4620ec71525e298f4.jpg@1e_1c.webp
+tag_img: https://s2.hdslb.com/bfs/article/1108cdec5c3ccbd7195e1fc4620ec71525e298f4.jpg@1e_1c.webp
 
 # The banner image of tag page
 # format:
@@ -72,7 +74,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://s1.hdslb.com/bfs/article/836c29154d0f649d3c5c5733f8a26a680e9ef259.jpg@1e_1c.webp
+category_img: https://s2.hdslb.com/bfs/article/836c29154d0f649d3c5c5733f8a26a680e9ef259.jpg@1e_1c.webp
 
 # The banner image of category page
 # format:
@@ -89,16 +91,16 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://s1.hdslb.com/bfs/article/fa397a48e6c300bb31030e0069cf454c080fe0fd.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/447b00b39115b448db162953a8774573c49934ff.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/770a3bf6ff0372ca06769647c405450904cbe90e.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/70898aab2034e6fa911c79afcfa28d337c03c23e.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/7c0e4c311c0b18d8699fc05003f71e1d376daef8.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/60c8de91b39006190de73e98e034418b0c71c71d.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/0b9dfd3e95fb368fe4f5e52534e6035910466bb3.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/06d903b05958411cdad81729bad425c6b0d1d1b2.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/6fe79ed9a485f51fef0851d6b9c4484afe93ff27.jpg@1e_1c.webp
-    - https://s1.hdslb.com/bfs/article/836c29154d0f649d3c5c5733f8a26a680e9ef259.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/fa397a48e6c300bb31030e0069cf454c080fe0fd.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/447b00b39115b448db162953a8774573c49934ff.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/770a3bf6ff0372ca06769647c405450904cbe90e.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/70898aab2034e6fa911c79afcfa28d337c03c23e.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/7c0e4c311c0b18d8699fc05003f71e1d376daef8.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/60c8de91b39006190de73e98e034418b0c71c71d.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/0b9dfd3e95fb368fe4f5e52534e6035910466bb3.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/06d903b05958411cdad81729bad425c6b0d1d1b2.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/6fe79ed9a485f51fef0851d6b9c4484afe93ff27.jpg@1e_1c.webp
+    - https://s2.hdslb.com/bfs/article/836c29154d0f649d3c5c5733f8a26a680e9ef259.jpg@1e_1c.webp
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -581,7 +583,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity: hzmgihcgpx
+microsoft_clarity: 
 
 # Advertisement
 # --------------------------------------
@@ -663,7 +665,7 @@ mask:
 rightside_bottom:
 
 # Enter transitions (開啓網頁進入效果)
-enter_transitions: false
+enter_transitions: true
 
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
@@ -737,8 +739,8 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: 15px
-  code-font-size: 15px
+  global-font-size:
+  code-font-size:
   font-family: ZhuDouSans, sans-serif
   code-font-family: ZhuDouSans, sans-serif
 
@@ -807,7 +809,7 @@ fancybox: true
 
 # series (系列文章)
 series:
-  enable: true
+  enable: false
   orderBy: 'title' # Order by title or date
   order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
   number: true
@@ -834,7 +836,7 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
+  style: flat
   icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
@@ -848,7 +850,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -870,7 +872,7 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: true
+instantpage: false
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -919,10 +921,13 @@ css_prefix: true
 inject:
   head:
     - <meta name="referrer" content="no-referrer">
-    - <script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3FHtwMLrNsmeb3xo",ck:"3FHtwMLrNsmeb3xo",autoTrack:true});</script>
-    - <style type="text/css">@font-face{font-family:'ZhuDouSans';font-display:swap;src:url(https://jsd.onmicrosoft.cn/gh/Buernia/Zhudou-Sans@main/fonts/webfont/ZhudouSansVF.woff2) format('woff2')}</style>
+    - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+    - <script>new LingQue.Monitor().init({id:"3FIVcC1kwtgWSdW3"});</script>
+    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    - <script>LA.init({id:"3FHtwMLrNsmeb3xo",ck:"3FHtwMLrNsmeb3xo"})</script>
+    # - <script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3FHtwMLrNsmeb3xo",ck:"3FHtwMLrNsmeb3xo",autoTrack:true});</script>
     # - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.min.css" />
-    # - <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/medium.css">
+    # - <link rel="stylesheet" href="https://s2.hdslb.com/bfs/static/jinkela/long/font/medium.css">
     # - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap">
     # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-700.css">
     # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-600.css">
@@ -1007,5 +1012,5 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
-    busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+    busuanzi: https://busuanzi.icodeq.com/busuanzi.pure.mini.js
     # abcjs_basic_js:

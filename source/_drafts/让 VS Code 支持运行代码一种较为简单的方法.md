@@ -7,7 +7,7 @@ categories:
 tags:
   - 编程
   - 工具
-cover: 'https://s1.hdslb.com/bfs/article/20323dcb19fd18b2c5b6f50c534a439d08cd558e.jpg@1e_1c.webp'
+cover: 'https://s2.hdslb.com/bfs/article/20323dcb19fd18b2c5b6f50c534a439d08cd558e.jpg@1e_1c.webp'
 abbrlink: 748f9323
 date: 2022-12-07 08:00:29
 updated: 2023-01-03 15:41:15
