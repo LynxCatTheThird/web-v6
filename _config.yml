@@ -191,16 +191,6 @@ minify:
     enable: false
     ## 详细配置: https://github.com/Lete114/fontmin-spider#api
     options: {}
-aplayer:
-  # script_dir: some/place # Public 目录下脚本目录路径，默认: 'assets/js'
-  # style_dir: some/place # Public 目录下样式目录路径，默认: 'assets/css'
-  # cdn: http://xxx/aplayer.min.js # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
-  # style_cdn: http://xxx/aplayer.min.css # 引用 APlayer.css 外部 CDN 地址 (默认不开启)
-  meting: true # MetingJS 支持
-  # meting_api: http://xxx/api.php # 自定义 Meting API 地址
-  # meting_cdn: http://xxx/Meing.min.js # 引用 Meting.js 外部 CDN 地址 (默认不开启)
-  asset_inject: false # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启
-  # externalLink: http://xxx/aplayer.min.js # 老版本参数，功能与参数 cdn 相同
 swpp:
   enable: true
 mmedia:
@@ -218,14 +208,14 @@ mmedia:
     dash_js: https://jsd.onmicrosoft.cn/npm/dashjs/dist/dash.all.min.js
     shaka_dash_js: https://cdn.staticfile.org/shaka-player/4.3.8/shaka-player.compiled.min.js
     flv_js: https://cdn.staticfile.org/flv.js/1.6.2/flv.min.js
-    webtorrent_js: https://jsd.onmicrosoft.cn//npm/webtorrent/webtorrent.min.js
+    webtorrent_js: https://jsd.onmicrosoft.cn/npm/webtorrent/webtorrent.min.js
   artplayer:
     js: https://cdn.staticfile.org/artplayer/5.0.9/artplayer.min.js
     hls_js: https://cdn.staticfile.org/hls.js/1.4.10/hls.min.js
     dash_js: https://jsd.onmicrosoft.cn/npm/dashjs/dist/dash.all.min.js
     shaka_dash_js: https://cdn.staticfile.org/shaka-player/4.3.8/shaka-player.compiled.min.js
     flv_js: https://cdn.staticfile.org/flv.js/1.6.2/flv.min.js
-    webtorrent_js: https://jsd.onmicrosoft.cn//npm/webtorrent/webtorrent.min.js
+    webtorrent_js: https://jsd.onmicrosoft.cn/npm/webtorrent/webtorrent.min.js
     default:
       style: width:100%;height:650px;max-width:1200px;center
       contents:
