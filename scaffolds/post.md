@@ -8,6 +8,5 @@ categories:
 katex: true
 mathjax: false
 mermaid: false
-aplayer: false
 description:
 ---

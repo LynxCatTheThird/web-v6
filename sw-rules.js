@@ -34,7 +34,7 @@ module.exports.config = {
     /**
      * 与 ServiceWorker 有关的配置项
      * 若想禁止插件自动生成 sw，此项填 false 即可
-     * @type ?Object|boolean
+     * @type {?Object|boolean}
      */
     serviceWorker: {
         /**
@@ -58,7 +58,7 @@ module.exports.config = {
     /**
      * 与 SW 注册有关的配置项
      * 若想禁止插件向 html 中插入注册代码，此项填 false 即可
-     * @type Object|boolean
+     * @type {Object|boolean}
      */
     register: {
         /**
@@ -80,7 +80,7 @@ module.exports.config = {
          * @return {string} 一个 HTML 标签的字符串形式
          */
         builder: (root, hexoConfig, pluginConfig) => {
-            const { onerror, onsuccess } = pluginConfig.register
+            const {onerror, onsuccess} = pluginConfig.register
             return `<script>
                       (() => {
                           const sw = navigator.serviceWorker
@@ -96,14 +96,14 @@ module.exports.config = {
     /**
      * 与 DOM 端有关的配置
      * 若想禁止插件自动生成 DOM 端 JS，此项填 false 即可
-     * @type Object|boolean
+     * @type {Object|boolean}
      */
     dom: {
         /**
          * 缓存更新成功后触发的操作
          * @type VoidFunction
          */
-        onsuccess: () => console.log("缓存更新成功")
+        onsuccess: () => {}
     },
     /**
      * 与插件生成的版本文件相关的配置项
@@ -160,7 +160,7 @@ module.exports.config = {
     /**
      * 外部文件更新监听
      * 该项缺省值为 false，若想允许插件监听外部文件的更新至少将值改为 `{}`
-     * @type Object|boolean
+     * @type {Object|boolean}
      * @see https://kmar.top/posts/73014407/#c60b3060
      */
     external: {
@@ -204,7 +204,7 @@ module.exports.config = {
     },
     /**
      * 对 Hexo 中的变量进行排序
-     * 默认插件对 posts、tags、categories、pages 四个变量进行排序
+     * 默认插件对 posts、tags、pages 三个变量进行排序
      * 排序规则为优先按照字符串长度排序，若长度一致按照字典序排序
      * 
      * 格式为 `name: value`
