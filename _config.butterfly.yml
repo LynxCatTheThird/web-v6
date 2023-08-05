@@ -140,7 +140,7 @@ index_post_content:
 anchor:
   button:
     enable: true
-    always_show: false
+    always_show: true
     icon: # the unicode value of Font Awesome icon, such as '\3423'
   auto_update: false # when you scroll in post, the URL will update according to header id.
 
@@ -975,7 +975,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    # twikoo:
+    twikoo: https://cdn.staticfile.org/twikoo/1.6.17/twikoo.all.min.js
     # waline_js:
     # waline_css:
     # giscus:
