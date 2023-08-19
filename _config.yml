@@ -217,12 +217,17 @@ mmedia:
     flv_js: https://cdn.staticfile.org/flv.js/1.6.2/flv.min.js
     webtorrent_js: https://jsd.onmicrosoft.cn/npm/webtorrent/webtorrent.min.js
     default:
-      style: width:100%;height:650px;max-width:1200px;center
+      style: width:100%;aspect-ratio:16/9;center
       contents:
         autoSize: false
         autoMini: false
         fullscreen: true
         fullscreenWeb: true
+        flip: true
+        playbackRate: true
+        setting: true
+        aspectRatio: true
+        screenshot: true
   bilibili:
     default:
       page: 1
