@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://lynx3.netlify.app/
+url: https://lynxcatthethird.github.io/
 permalink: article/:abbrlink/
 permalink_defaults:
 pretty_urls:
@@ -192,7 +192,10 @@ minify:
     ## 详细配置: https://github.com/Lete114/fontmin-spider#api
     options: {}
 swpp:
+  # 是否启用插件
   enable: true
+  # 是否在发布前自动执行脚本
+  # auto_exec: true
 mmedia:
   video:
     default:
