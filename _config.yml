@@ -98,6 +98,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+# Markdown
 markdown:
   preset: 'default'
   render:
@@ -116,6 +117,7 @@ markdown:
   anchors:
     level: 1
   inline: false  # https://markdown-it.github.io/markdown-it/#MarkdownIt.renderInline
+# Links
 abbrlink:
   alg: crc32      #support crc16(default) and crc32
   rep: hex        #support dec(default) and hex
@@ -135,67 +137,33 @@ nofollow:
   exclude:
     - 'exclude1.com'
     - 'exclude2.com'
+# Search
 search:
   path: search.xml
   field: post
   content: true
   format: html
-## Hexo-minify Default Config Options
-minify:
-  preview: true ## 本地预览时是否压缩
-  exclude: ['*.min.*']
-  js:
-    enable: true
-    sourceMap:
-      enable: false ## 生成 sourceMap
-      ## 将 sourceMappingURL 插入压缩后的 js 文件，如果为 false 则需要在浏览器开发者工具中手动添加 sourceMap
-      sourceMappingURL: false ## //# sourceMappingURL=xxx.js.map
-    ## 详细配置: https://github.com/terser/terser#minify-options
-    options: {}
-  css:
-    enable: true
-    ## 详细配置: https://github.com/clean-css/clean-css#compatibility-modes
-    options: {}
-  html:
-    enable: true
-    ## 详细配置: https://github.com/kangax/html-minifier#options-quick-reference
-    options:
-      minifyJS: true # Compressed JavaScript
-      minifyCSS: true # CSS Compressed
-      removeComments: true # Remove the comments
-      collapseWhitespace: true # Delete any extra space
-      removeAttributeQuotes: true # Delete attribute quotes
-  image:
-    enable: true
-    svg:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-svgo#imageminsvgooptionsbuffer
-      options: {}
-    jpg:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-jpegtran#options
-      options: {}
-    png:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-pngquant#options
-      options: {}
-    gif:
-      enable: true
-      ## 详细配置: https://www.npmjs.com/package/imagemin-gifsicle#options
-      options: {}
-    webp:
-      enable: true
-      ## 详细配置: https://github.com/imagemin/imagemin-webp#options
-      options: {}
-  font:
-    enable: false
-    ## 详细配置: https://github.com/Lete114/fontmin-spider#api
-    options: {}
-swpp:
-  # 是否启用插件
-  enable: true
-  # 是否在发布前自动执行脚本
-  # auto_exec: true
+# Minify
+uglify:
+    mangle: true
+    output:
+    compress:
+    exclude:
+        - "*.min.js"
+clean_css:
+    exclude:
+        - "*.min.css"
+html_minifier:
+    collapseBooleanAttributes: true
+    collapseWhitespace: true
+    ignoreCustomComments: [!!js/regexp /^\s*more/]
+    removeComments: true
+    removeEmptyAttributes: true
+    removeScriptTypeAttributes: true
+    removeStyleLinkTypeAttributes: true
+    minifyJS: true
+    minifyCSS: true
+# MMedia
 mmedia:
   video:
     default:
@@ -250,5 +218,5 @@ deploy:
     repository: git@github.com:LynxCatTheThird/lynxcatthethird.github.io.git
     branch: main
   - type: git
-    repository: git@github.com:ara1145/ara1145.github.io.git
+    repository: git@github.com:LeptailTheFirst/LeptailTheFirst.github.io.git
     branch: main

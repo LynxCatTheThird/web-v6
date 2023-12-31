@@ -494,7 +494,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo2.lctt.eu.org/.netlify/functions/twikoo
+  envId: https://lynxcatthethird-twikoo.hf.space/
   region:
   visitor: false
   option:
@@ -665,7 +665,7 @@ mask:
 rightside_bottom:
 
 # Enter transitions (開啓網頁進入效果)
-enter_transitions: false
+enter_transitions: true
 
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
@@ -951,7 +951,7 @@ CDN:
   third_party_provider: custom
 
   # Add version number to url, true or false
-  version: false
+  version: true
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
@@ -975,7 +975,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    twikoo: https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js
+    # twikoo: https://cdn.staticfile.org/twikoo/1.6.xx/twikoo.all.min.js
     # waline_js:
     # waline_css:
     # giscus:
@@ -1001,7 +1001,7 @@ CDN:
     # fireworks:
     # click_heart:
     # ClickShowText:
-    # fontawesome:
+    fontawesome: https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
     aplayer_css: https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css
