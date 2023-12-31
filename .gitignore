@@ -14,3 +14,4 @@ node_modules/
 t
 t.exe
 themes/butterfly_dev/
+package-lock.json
