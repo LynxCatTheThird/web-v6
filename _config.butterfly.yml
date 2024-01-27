@@ -494,7 +494,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://lynxcatthethird-twikoo.hf.space/
+  envId: https://twikoo2-lynx3.netlify.app/.netlify/functions/twikoo
   region:
   visitor: false
   option:
@@ -559,7 +559,6 @@ crisp:
   enable: false
   website_id:
 
-# messenger
 # https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/
 messenger:
   enable: false
