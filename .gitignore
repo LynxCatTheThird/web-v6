@@ -1,3 +1,4 @@
+# General
 logs
 *.log
 npm-debug.log*
@@ -11,7 +12,10 @@ public/
 .deploy*/
 _multiconfig.yml
 node_modules/
+
+# Tools
 t
 t.exe
+
+# Debug & Develop
 themes/butterfly_dev/
-package-lock.json
