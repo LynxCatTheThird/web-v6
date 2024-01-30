@@ -12,7 +12,7 @@ date: 2023-07-23 12:42:29
         name: "LynxCatTheThird",
         limit: 10,
         useLoadingImg: false,
-        baseURL: "https://qexo-hexo.lynxcatthethird.cn.eu.org",
+        baseURL: "https://qexo.lctt.eu.org/",
     }).then(function (){
         console.log("Qexo说说加载完成");
     })
@@ -21,4 +21,4 @@ date: 2023-07-23 12:42:29
 <div id="qexot"></div>
 <script src="https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.js"></script>
 <link rel="stylesheet" href="https://npm.onmicrosoft.cn/qexo-static@1.6.0/hexo/talks.css">
-<script>showQexoTalks("qexot", "https://qexo-hexo.lynxcatthethird.cn.eu.org", 5)</script> -->
+<script>showQexoTalks("qexot", "https://qexo.lctt.eu.org/", 5)</script> -->

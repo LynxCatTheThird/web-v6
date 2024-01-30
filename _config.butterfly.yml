@@ -17,9 +17,11 @@ menu:
     友链: /link/ || fas fa-link
     留言板: /comment/ || fas fa-share-nodes
     说说: /talk/ || fas fa-comment-dots
+  公告栏: /board/ || fa-clipboard-list
   关于||fas fa-list:
-    关于我: /aboutme/ || fas fa-user
-    关于小站: /aboutsite/ || fas fa-earth-americas
+    关于我: /about/ || fas fa-user
+    有问必答: /faq/ || fa-file-circle-question
+    问题自查: /help/ || fa-person-circle-question
     鸣谢: /thanks/ || fas fa-heart
     条款与政策: /policy/ || fas fa-envelope-open-text
 
@@ -416,8 +418,8 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Twikoo # Valine,Disqus
-  text: false # Display the comment name next to the button
+  use: Twikoo,Waline # Valine,Disqus
+  text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: true
@@ -467,7 +469,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: # Waline server address url
+  serverURL: https://waline.lctt.eu.org/ # Waline server address url
   bg: # waline background
   pageview: false
   option:
@@ -849,7 +851,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   exclude:
     # - xxxx
     # - xxxx
@@ -919,7 +921,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <meta name="referrer" content="no-referrer">
+    # - <meta name="referrer" content="no-referrer">
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     - <script>LA.init({id:"3FHtwMLrNsmeb3xo",ck:"3FHtwMLrNsmeb3xo",autoTrack:true})</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
@@ -950,7 +952,7 @@ CDN:
   third_party_provider: custom
 
   # Add version number to url, true or false
-  version: true
+  version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}

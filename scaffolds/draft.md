@@ -1,12 +1,11 @@
 ---
 title: {{ title }}
+categories:
+tags:
+cover: >-
+  
+katex: true
+description: 
 date: {{ date }}
 updated: {{ date }}
-cover:
-tags:
-categories:
-katex: true
-mathjax: false
-mermaid: false
-description:
 ---
