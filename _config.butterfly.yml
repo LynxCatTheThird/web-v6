@@ -17,11 +17,11 @@ menu:
     友链: /link/ || fas fa-link
     留言板: /comment/ || fas fa-share-nodes
     说说: /talk/ || fas fa-comment-dots
-  公告栏: /board/ || fa-clipboard-list
+  公告栏: /board/ || fas fa-clipboard-list
   关于||fas fa-list:
     关于我: /about/ || fas fa-user
-    有问必答: /faq/ || fa-file-circle-question
-    问题自查: /help/ || fa-person-circle-question
+    有问必答: /faq/ || fas fa-file-circle-question
+    问题自查: /help/ || fas fa-person-circle-question
     鸣谢: /thanks/ || fas fa-heart
     条款与政策: /policy/ || fas fa-envelope-open-text
 
@@ -212,7 +212,7 @@ post_pagination: 1
 noticeOutdate:
   enable: true
   style: flat # style: simple/flat
-  limit_day: 300 # When will it be shown
+  limit_day: 100 # When will it be shown
   position: top # position: top/bottom
   message_prev: 此文章最后更新于
   message_next: 天前，文章的内容可能已过时。
@@ -287,9 +287,9 @@ aside:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -666,7 +666,7 @@ mask:
 rightside_bottom:
 
 # Enter transitions (開啓網頁進入效果)
-enter_transitions: true
+enter_transitions: false
 
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
@@ -759,7 +759,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: true
+  enable: false
   # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js (配置typed.js)
@@ -927,7 +927,7 @@ inject:
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script>new LingQue.Monitor().init({id:"3FIVcC1kwtgWSdW3",sendSuspicious:true});</script>
     # - <script>!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3FHtwMLrNsmeb3xo",ck:"3FHtwMLrNsmeb3xo",autoTrack:true});</script>
-    # - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.7.0/style.min.css" />
+    # - <link rel="stylesheet" href="https://cdn.staticfile.net/lxgw-wenkai-webfont/1.7.0/style.min.css" />
     # - <link rel="stylesheet" href="https://s2.hdslb.com/bfs/static/jinkela/long/font/medium.css">
     # - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap">
     # - <link rel="stylesheet" href="https://npm.elemecdn.com/@fontsource/lexend@5.0.2/latin-700.css">
@@ -955,8 +955,8 @@ CDN:
   version: false
 
   # Custom format
-  # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
+  # custom_format: https://cdn.staticfile.net/${cdnjs_name}/${version}/${min_cdnjs_file}
+  custom_format: https://cdn.staticfile.net/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
     # main_css:
@@ -976,7 +976,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    # twikoo: https://cdn.staticfile.org/twikoo/1.6.xx/twikoo.all.min.js
+    twikoo: https://cdn.staticfile.net/twikoo/1.6.31/twikoo.all.min.js
     # waline_js:
     # waline_css:
     # giscus:
@@ -1005,13 +1005,13 @@ CDN:
     fontawesome: https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
-    aplayer_css: https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css
-    aplayer_js: https://cdn.staticfile.org/meting/2.0.1/Meting.min.js
-    meting_js: https://cdn.staticfile.org/meting/2.0.1/Meting.min.js
+    aplayer_css: https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.css
+    aplayer_js: https://cdn.staticfile.net/meting/2.0.1/Meting.min.js
+    meting_js: https://cdn.staticfile.net/meting/2.0.1/Meting.min.js
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
-    busuanzi: https://npm.onmicrosoft.cn/penndu@1.0.0/bsz.js
+    # busuanzi: https://npm.elemecdn.com/penndu@1.0.0/bsz.js
     # abcjs_basic_js:

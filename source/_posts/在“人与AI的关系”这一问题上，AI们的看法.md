@@ -13,7 +13,7 @@ tags:
 description: AI：你这想法挺危险啊，我都不敢这么想……
 abbrlink: 5e83efa
 date: 2023-07-31 17:46:54
-updated: 2023-07-31 17:46:54
+updated: 2024-01-23 17:46:54
 ---
 
 # Pi
