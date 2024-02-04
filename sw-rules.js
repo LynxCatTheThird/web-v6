@@ -1,11 +1,10 @@
 module.exports.config = {
     serviceWorker: {
         escape: 0,
-        cacheName: 'LCTTBlogCache',
-        debug: false
+        cacheName: 'LCTTBlogCache'
     },
     register: {
-        onsuccess: console.log('Service Worker 注册成功！'),
+        onsuccess: undefined,
         onerror: () => console.error('Service Worker 注册失败，可能是由于您的浏览器不支持该功能！'),
         builder: (root, framework, pluginConfig) => {
             const { onerror, onsuccess } = pluginConfig.register;
@@ -44,7 +43,7 @@ module.exports.config = {
         }
     },
     external: {
-        timeout: 10000,
+        timeout: 5000,
         concurrencyLimit: 100,
         js: [],
         stable: [],
@@ -56,7 +55,7 @@ module.exports.cacheRules = {
     simple: {
         clean: true,
         search: false,
-        match: (url, $eject) => url.pathname.match(/\.(html|js|css|woff2|woff|ttf|json|xml)$/),
+        match: (url, $eject) => url.pathname.match(/\.(js|css|woff2|woff|ttf|json|xml)$/),
     }
 };
 

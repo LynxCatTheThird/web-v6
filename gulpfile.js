@@ -28,9 +28,11 @@ gulp.task('minify-js', () =>
 gulp.task('minify-css', () =>
     gulp.src(['./public/**/*.css'])
         .pipe(cssnano({
+            autoprefixer: false,
             mergeIdents: false,
             reduceIdents: false,
-            discardUnused: false
+            discardUnused: false,
+            zindex:false
         })).pipe(gulp.dest('./public'))
 )
 
@@ -81,6 +83,6 @@ gulp.task('minify-ttf', (cb) => {
 });
 
 //压缩
-gulp.task("zip", gulp.parallel('minify-js', 'minify-css', 'minify-html', 'minify-ttf'))
+gulp.task("zip", gulp.parallel('minify-js', 'minify-css', 'minify-html'))
 
 //——By 山岳库博（https://kmar.top/posts/7d9fb37e/）
