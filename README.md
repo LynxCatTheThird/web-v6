@@ -1,1 +1,1 @@
-## 重新出发，砥砺前行
+# Hi! Here's the source code for LynxCatTheThird's personal website.
