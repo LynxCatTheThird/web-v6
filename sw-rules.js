@@ -36,7 +36,7 @@ module.exports.config = {
     json: {
         maxHtml: 15,
         charLimit: 1024,
-        merge: [],
+        merge: ['index', 'tags', 'categories'],
         exclude: {
             localhost: [],
             other: []
@@ -47,7 +47,19 @@ module.exports.config = {
         concurrencyLimit: 100,
         js: [],
         stable: [],
-        replacer: srcUrl => srcUrl
+        replacer: srcUrl => {
+            if (srcUrl.startsWith('https://cdn.jsdelivr.net/npm/')) {
+                const pathname = new URL(srcUrl).pathname;
+                return [
+                    srcUrl,
+                    `https://cdn.cbd.int/${pathname}`,
+                    `https://npm.elemecdn.com/${pathname}`,
+                    `https://fastly.jsdelivr.net/npm/${pathname}`,
+                ];
+            } else {
+                return srcUrl;
+            }
+        }
     }
 };
 
@@ -55,7 +67,26 @@ module.exports.cacheRules = {
     simple: {
         clean: true,
         search: false,
-        match: (url, $eject) => url.pathname.match(/\.(js|css|woff2|woff|ttf|json|xml)$/),
+        match: (url, $eject) => (url.host.includes('lynx') || url.host.includes('lctt')) && url.pathname.match(/\.(html|js|css|xml)$/), // 主站缓存
+    },
+    cdn: {
+        clean: true,
+        match: url => [
+            // "cdn.staticfile.org",
+            "cdn.staticfile.net",
+            "cdn.bootcdn.net",
+            "jsd.cdn.zzko.cn",
+            "jsd.onmicrosoft.cn",
+            "sdk.51.la",
+            "npm.elemecdn.com",
+            "cdn.cbd.int",
+            "cdn.jsdelivr.net",
+            "fastly.jsdelivr.net",
+            "lynx-static.s3.bitiful.net",
+            "lynx-img.s3.bitiful.net",
+            "s2.hdslb.com",
+            // "fonts.googleapis.com",
+        ].includes(url.host) && url.pathname.match(/\.(js|css|woff2|woff|ttf|json|png|jpg|webp)$/), // CDN 缓存
     }
 };
 
@@ -63,9 +94,13 @@ module.exports.getSpareUrls = srcUrl => {
     if (srcUrl.startsWith("https://npm.elemecdn.com")) {
         return {
             timeout: 3000,
-            list: [srcUrl, `https://fastly.jsdelivr.net/${new URL(srcUrl).pathname}`],
+            list: [srcUrl, `https://fastly.jsdelivr.net/${new URL(srcUrl).pathname}`, `https://cdn.cbd.int/${new URL(srcUrl).pathname}`],
         };
     }
+}
+
+module.exports.isMemoryQueue = request => {
+    // do something...
 }
 
 module.exports.ejectValues = (hexo, rules) => {
