@@ -584,7 +584,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity: 
+microsoft_clarity: hzmgihcgpx
 
 # Advertisement
 # --------------------------------------
@@ -742,8 +742,8 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family: ZhuDouSans, system-ui, -apple-system, sans-serif
-  code-font-family: ZhuDouSans, Menlo, Monaco, Consolas, monospace, system-ui, sans-serif
+  font-family:
+  code-font-family:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -952,7 +952,7 @@ CDN:
 
   # Custom format
   # custom_format: https://cdn.bootcdn.net/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://cdn.bootcdn.net/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}
+  custom_format: https://cdn.staticfile.net/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
     # main_css:

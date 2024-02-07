@@ -211,7 +211,7 @@ tag_plugins:
     placeholder: /img/link.png #link_card标签默认的图标图片
   CDN:
     anima: https://lynx-static.s3.bitiful.net/css/hexo-butterfly-tag-plugins-plus-lite-1.0.1/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js #issues标签依赖
+    jquery: https:///cdn.staticfile.net/jquery/3.7.1/jquery.min.js #issues标签依赖
     issues: https://lynx-static.s3.bitiful.net/css/hexo-butterfly-tag-plugins-plus-lite-1.0.1/lib/assets/issues.js #issues标签依赖
     carousel: https://lynx-static.s3.bitiful.net/css/hexo-butterfly-tag-plugins-plus-lite-1.0.1/lib/assets/carousel-touch.js
     tag_plugins_css: https://lynx-static.s3.bitiful.net/css/hexo-butterfly-tag-plugins-plus-lite-1.0.1/lib/tag_plugins.css
