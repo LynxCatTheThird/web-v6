@@ -1,5 +1,4 @@
 ---
-title: 分类
+title: categories
 date: 2023-04-05 14:41:29
-type: "categories"
 ---

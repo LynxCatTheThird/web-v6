@@ -1,5 +1,4 @@
 ---
-title: 标签
+title: tags
 date: 2023-04-05 14:41:02
-type: "tags"
 ---

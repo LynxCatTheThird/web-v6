@@ -19,7 +19,7 @@ void hexoBuild(){
   cout<<"Generating...\n";
   system("hexo generate > /dev/null");
   cout<<"Optimizing...\n";
-  system("hexo swpp&&gulp zip");
+  system("hexo swpp");
   cout<<"Deploying...\n";
   system("hexo d");
   hexoClean();
