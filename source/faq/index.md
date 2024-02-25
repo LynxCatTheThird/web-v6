@@ -1,6 +1,7 @@
 ---
 title: FAQ
 date: 2024-01-30 21:25:57
+comment: true
 ---
 
 # 为什么叫 LynxCatTheThird？

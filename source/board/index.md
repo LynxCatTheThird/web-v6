@@ -1,6 +1,7 @@
 ---
 title: 公告栏
 date: 2024-01-30 21:29:58
+comment: true
 ---
 
 # ServiceWorker 的移除需要手动干预

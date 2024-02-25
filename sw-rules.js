@@ -1,6 +1,6 @@
 module.exports.config = {
     serviceWorker: {
-        escape: 0,
+        escape: 19,
         cacheName: 'LCTTBlogCache'
     },
     register: {
