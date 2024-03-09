@@ -52,9 +52,7 @@ module.exports.config = {
                 const pathname = new URL(srcUrl).pathname;
                 return [
                     srcUrl,
-                    `https://cdn.cbd.int/${pathname}`,
-                    `https://npm.elemecdn.com/${pathname}`,
-                    `https://fastly.jsdelivr.net/npm/${pathname}`,
+                    `https://s4.zstatic.net/${pathname}`,
                 ];
             } else {
                 return srcUrl;
@@ -74,11 +72,11 @@ module.exports.cacheRules = {
         match: url => [
             // "cdn.staticfile.org",
             "cdn.staticfile.net",
-            "cdn.bootcdn.net",
-            "jsd.cdn.zzko.cn",
-            "jsd.onmicrosoft.cn",
+            // "cdn.bootcdn.net",
+            // "jsd.cdn.zzko.cn",
+            // "jsd.onmicrosoft.cn",
             "sdk.51.la",
-            "mirrors.sustech.edu.cn",
+            // "mirrors.sustech.edu.cn",
             "s4.zstatic.net",
             // "npm.elemecdn.com",
             // "cdn.cbd.int",
@@ -91,10 +89,10 @@ module.exports.cacheRules = {
 };
 
 module.exports.getSpareUrls = srcUrl => {
-    if (srcUrl.startsWith("https://npm.elemecdn.com")) {
+    if (srcUrl.startsWith("https://s4.zstatic.net/npm")) {
         return {
             timeout: 3000,
-            list: [srcUrl, `https://fastly.jsdelivr.net/${new URL(srcUrl).pathname}`, `https://cdn.cbd.int/${new URL(srcUrl).pathname}`],
+            list: [srcUrl, `https://cdn.jsdelivr.net/npm${new URL(srcUrl).pathname}`],
         };
     }
 }
