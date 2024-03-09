@@ -23,11 +23,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: https://s2.hdslb.com/bfs/article/621ceaa1fcd3b63bfb3d7d3948bd93647ac50b72.png@1e_1c.webp
   # Site logo
   logo: 
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: https://s2.hdslb.com/bfs/article/621ceaa1fcd3b63bfb3d7d3948bd93647ac50b72.png@1e_1c.webp
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -302,7 +302,7 @@ articles:
     enable: true # Whether to enable
     default: cc_by_nc_sa # Default license, can be cc_by_nc_sa, cc_by_nd, cc_by_nc, cc_by_sa, cc_by, all_rights_reserved, public_domain
   # Whether to enable lazyload for images
-  lazyload: true
+  lazyload: false
   # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
   recommendation:
     # Whether to enable article recommendation
@@ -314,7 +314,7 @@ articles:
     # Max number of articles to display mobile
     mobile_limit: 2
     # Placeholder image
-    placeholder: /images/wallhaven-wqery6-light.webp
+    placeholder: https://s2.hdslb.com/bfs/article/f1ec0234e1628550dc045bf2cf9d045c1352440272.png@1e_1c.webp
     # Skip directory
     skip_dirs: []
 # ARTICLE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -397,28 +397,11 @@ inject:
     - <script>LA.init({id:"3FHtwMLrNsmeb3xo",ck:"3FHtwMLrNsmeb3xo",autoTrack:true})</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script>new LingQue.Monitor().init({id:"3FIVcC1kwtgWSdW3",sendSuspicious:true});</script>
-    - <script data-swup-reload-script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.8/katex.min.js"></script>
-    - <script data-swup-reload-script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.8/contrib/auto-render.min.js"></script>
-    - <link href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet">
-    - >
-      <script data-swup-reload-script>
-        document.addEventListener("DOMContentLoaded", function() {
-          renderMathInElement(document.body, {
-            delimiters: [
-              {left: "$$", right: "$$", display: true},
-              {left: "$", right: "$", display: false}
-            ]
-          });
-        });
-      </script>
-    - <script data-swup-reload-script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.8/contrib/mhchem.min.js"></script>
-    - <script data-swup-reload-script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.8/contrib/mhchem.min.js"></script>
-    # - <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/style.min.css" />
+    # - <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/style.min.css">
     # - <link rel="stylesheet" href="https://s2.hdslb.com/bfs/static/jinkela/long/font/medium.css">
-    # - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&display=swap">
   # Inject custom footer html code
   footer:
-    -
+    - 
     -
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
