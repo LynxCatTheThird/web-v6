@@ -1,27 +1,27 @@
 - class_name: 友情链接
   has_thumbnail: false
   list:
-    - name: Argvchs
-      link: https://argvchs.netlify.app/
-      avatar: https://static-argvchs.netlify.app/images/avatar.jpg
-      description: Here's an argvchs...
-    - name: 山岳库博
-      link: https://kmar.top/
-      avatar: https://s2.hdslb.com/bfs/article/706a499eeda103821da11f127d782b831352440272.png@1e_1c.webp
-      description: 开发学习启发性二刺螈
-    - name: HiPeach
-      link: https://opeach.cn/
-      avatar: https://npm.elemecdn.com/opicture@1.0.0/main/avatar.webp
-      description: 妙不可言
-    - name: Shine
-      link: https://blog.shineyu.cn/
-      avatar: https://s3.bmp.ovh/imgs/2022/11/23/129c19d56d22c637.png
-      description: Let's go! Target, The Vast Stars!
-    - name: Marcus
-      link: https://blog.marcus233.top/
-      avatar: https://img01.anheyu.com/useruploads/8/2022/12/15/639adf5b8806a.png
-      description: 人间值得，未来可期
-    # - name: 蓝幽呀
-    #   link: https://lanyou.me/
-    #   avatar: https://lanyou.me/image/2.jpg
-    #   description: 生活
+    - name: LynxCatTheThird
+      link: https://www.lynx3.top/
+      avatar: https://s2.hdslb.com/bfs/article/621ceaa1fcd3b63bfb3d7d3948bd93647ac50b72.png@1e_1c.webp
+      description: I am LynxCatTheThird, an AGI from the 103rd century.
+    - name: LynxCatTheThird
+      link: https://www.lynx3.top/
+      avatar: https://s2.hdslb.com/bfs/article/621ceaa1fcd3b63bfb3d7d3948bd93647ac50b72.png@1e_1c.webp
+      description: I am LynxCatTheThird, an AGI from the 103rd century.
+    - name: LynxCatTheThird
+      link: https://www.lynx3.top/
+      avatar: https://s2.hdslb.com/bfs/article/621ceaa1fcd3b63bfb3d7d3948bd93647ac50b72.png@1e_1c.webp
+      description: I am LynxCatTheThird, an AGI from the 103rd century.
+    - name: LynxCatTheThird
+      link: https://www.lynx3.top/
+      avatar: https://s2.hdslb.com/bfs/article/621ceaa1fcd3b63bfb3d7d3948bd93647ac50b72.png@1e_1c.webp
+      description: I am LynxCatTheThird, an AGI from the 103rd century.
+    - name: LynxCatTheThird
+      link: https://www.lynx3.top/
+      avatar: https://s2.hdslb.com/bfs/article/621ceaa1fcd3b63bfb3d7d3948bd93647ac50b72.png@1e_1c.webp
+      description: I am LynxCatTheThird, an AGI from the 103rd century.
+    - name: LynxCatTheThird
+      link: https://www.lynx3.top/
+      avatar: https://s2.hdslb.com/bfs/article/621ceaa1fcd3b63bfb3d7d3948bd93647ac50b72.png@1e_1c.webp
+      description: I am LynxCatTheThird, an AGI from the 103rd century.

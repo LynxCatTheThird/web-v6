@@ -1,7 +1,7 @@
 module.exports.config = {
     serviceWorker: {
-        escape: 19,
-        cacheName: 'LCTTBlogCache'
+        escape: 0,
+        cacheName: 'LPTFBlogCache'
     },
     register: {
         onsuccess: undefined,
@@ -27,10 +27,10 @@ module.exports.config = {
                 if (res)
                     res.json().then(json => {
                         utils && utils.snackbarShow(`已刷新缓存，更新为${json.global + '.' + json.local}版本最新内容`, false, 2000)
-                    })
+                    });
                 else
-                    console.info('未找到缓存')
-            }).catch((error) => console.error("缓存匹配出错", error))
+                    console.info('未找到缓存');
+            }).catch(error => console.error("缓存匹配出错", error));
         }
     },
     json: {
@@ -48,11 +48,11 @@ module.exports.config = {
         js: [],
         stable: [],
         replacer: srcUrl => {
-            if (srcUrl.startsWith('https://cdn.jsdelivr.net/npm/')) {
+            if (srcUrl.startsWith('https://cdn.jsdelivr.net/')) {
                 const pathname = new URL(srcUrl).pathname;
                 return [
                     srcUrl,
-                    `https://s4.zstatic.net/${pathname}`,
+                    `https://jsd.cdn.zzko.cn/${pathname}`,
                 ];
             } else {
                 return srcUrl;
@@ -65,47 +65,43 @@ module.exports.cacheRules = {
     simple: {
         clean: true,
         search: false,
-        match: (url, $eject) => (url.host.includes('lynx') || url.host.includes('lctt')) && url.pathname.match(/\.(html|js|css|xml)$/), // 主站缓存
+        match: (url, $eject) => (url.host.includes('lynx') || url.host.includes('lctt')) && url.pathname.match(/(\.(js|css|xml|json)|\/)$/) // 主站缓存
     },
     cdn: {
         clean: true,
         match: url => [
-            // "cdn.staticfile.org",
-            "cdn.staticfile.net",
+            // "cdn.staticfile.net",
             // "cdn.bootcdn.net",
-            // "jsd.cdn.zzko.cn",
+            "jsd.cdn.zzko.cn",
             // "jsd.onmicrosoft.cn",
             "sdk.51.la",
-            // "mirrors.sustech.edu.cn",
-            "s4.zstatic.net",
-            // "npm.elemecdn.com",
-            // "cdn.cbd.int",
-            // "cdn.jsdelivr.net",
-            // "fastly.jsdelivr.net",
+            "www.clarity.ms",
+            // "s4.zstatic.net",
             "s2.hdslb.com",
             // "fonts.googleapis.com",
-        ].includes(url.host) && url.pathname.match(/\.(js|css|woff2|woff|ttf|json|png|jpg|webp)$/), // CDN 缓存
+        ].includes(url.host) && url.pathname.match(/\.(js|css|woff2|woff|ttf|json|png|jpg|webp)$/) // CDN 缓存
     }
 };
 
 module.exports.getSpareUrls = srcUrl => {
-    if (srcUrl.startsWith("https://s4.zstatic.net/npm")) {
+    if (srcUrl.startsWith("https://jsd.cdn.zzko.cn")) {
         return {
             timeout: 3000,
-            list: [srcUrl, `https://cdn.jsdelivr.net/npm${new URL(srcUrl).pathname}`],
+            list: [
+                srcUrl,
+                `https://cdn.jsdelivr.net${new URL(srcUrl).pathname}`
+            ]
         };
     }
-}
+};
 
 module.exports.isMemoryQueue = request => {
     // do something...
-}
-
-module.exports.ejectValues = (hexo, rules) => {
-    return {
-        domain: {
-            prefix: "const",
-            value: new URL(hexo.config.url).host,
-        },
-    };
 };
+
+module.exports.ejectValues = (hexo, rules) => ({
+    domain: {
+        prefix: "const",
+        value: new URL(hexo.config.url).host,
+    },
+});

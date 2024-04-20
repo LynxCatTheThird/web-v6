@@ -9,10 +9,10 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "7.1.1"
+    "version": "7.2.0"
   },
   "dependencies": {
-    "hexo": "^7.1.1",
+    "hexo": "^7.2.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-clean-css": "^2.0.0",
     "hexo-deployer-git": "^4.0.0",
@@ -34,6 +34,6 @@
     "hexo-uglify": "^2.0.0",
     "hexo-wordcount": "^6.0.1",
     "nodejieba": "^2.6.0",
-    "swpp-backends": "^2.3.8"
+    "swpp-backends": "^2.3.11"
   }
 }
