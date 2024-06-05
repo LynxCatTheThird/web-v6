@@ -15,7 +15,7 @@ info:
   # Author name
   author: LynxCatTheThird
   # Site URL
-  url: https://lynxcatthethird.github.io
+  url: https://www.lynx3.top/
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -183,10 +183,10 @@ navbar:
     pages: 1000px #other pages
   # Navbar links
   links:
-    时间线: 
+    时间线:
       path: /archives/
       icon: fa-regular fa-archive # can be empty
-    交流: 
+    交流:
       icon: fa-regular fa-list
       submenus:
         友链: /link/
@@ -197,7 +197,7 @@ navbar:
       submenus:
         问题自查: /help/
         公告栏: /notice/
-    关于: 
+    关于:
       icon: fa-regular fa-user
       submenus:
         关于我: /about/
@@ -224,15 +224,16 @@ home:
     announcement: 换成了 Redefine，超级好用！ # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      时间线: 
+      时间线:
         path: /archives/
         icon: fa-regular fa-archive # can be empty
-      标签: 
+      标签:
         path: /tags/
         icon: fa-regular fa-tags
-      分类: 
+      分类:
         path: /categories/
         icon: fa-regular fa-folder-open
+      # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
   # Article categories visibility
@@ -273,7 +274,7 @@ articles:
   # Author label
   author_label: 
     enable: true # Whether to enable
-    auto: true # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
+    auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
     list: []
   # Code block settings
   code_block:
@@ -324,7 +325,7 @@ comment:
   config:
     # Waline comment system. See https://waline.js.org/
     waline:
-      serverUrl: https://waline-vercel.lynx3.top/ # Waline server URL. e.g. https://example.example.com
+      serverUrl: https://vc.wl.api.lynx3.top/ # Waline server URL. e.g. https://example.example.com
       lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
       emoji: [] # Waline emojis, see https://waline.js.org/guide/features/emoji.html
       recaptchaV3Key: wasd # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
@@ -338,8 +339,8 @@ comment:
       proxy: # GitHub repository proxy
     # Twikoo comment system. See https://twikoo.js.org/
     twikoo:
-      version: 1.6.31 # Twikoo version, do not modify if you dont know what it is
-      server_url: https://twikoo-vercel.lynx3.top/ # Twikoo server URL. e.g. https://example.example.com
+      version: 1.6.36 # Twikoo version, do not modify if you dont know what it is
+      server_url: https://vc.tk.api.lynx3.top/ # Twikoo server URL. e.g. https://example.example.com
       region: # Twikoo region. can be empty
     # Giscus comment system. See https://giscus.app/
     giscus:
@@ -382,15 +383,15 @@ footer:
 # Docs: https://redefine-docs.ohevan.com/inject
 inject:
   # Whether to enable inject
-  enable: true
+  enable: false
   # Inject custom head html code
   head: 
-    # - <meta name="referrer" content="no-referrer">
-    # - <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/style.min.css">
-    # - <link rel="stylesheet" href="https://s2.hdslb.com/bfs/static/jinkela/long/font/medium.css">
+    -
+    -
   # Inject custom footer html code
   footer:
-    - 
+    -
+    -
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -409,10 +410,12 @@ plugins:
         artist: # audio artist
         url: # audio url
         cover: # audio cover url
+        lrc: # audio cover lrc
 #      - name: # audio name
 #        artist: # audio artist
 #        url: # audio url
 #        cover: # audio cover url
+#        lrc: # audio cover lrc
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
