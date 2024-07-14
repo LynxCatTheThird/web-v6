@@ -97,21 +97,28 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: redefine
-# Markdown
+### Markdown
 markdown:
-  preset: "default"
+  preset: 'default'
   render:
     html: true
     xhtmlOut: true
-    langPrefix: ""
+    langPrefix: ''
     breaks: false
     linkify: true
     typographer: false
   plugins:
-    - markdown-it-abbr
-    - markdown-it-sub
-    - markdown-it-sup
-    - markdown-it-footnote
+    - markdown-it-abbr # 注释
+    # - markdown-it-attrs # 附加属性
+    # - markdown-it-cjk-breaks # 抑制东亚字符之间的换行
+    # - markdown-it-container # 自定义块
+    - markdown-it-deflist # 定义列表
+    - markdown-it-emoji # 表情
+    - markdown-it-footnote # 脚注
+    - markdown-it-ins # 插入（下划线）
+    - markdown-it-mark # 标记（高亮）
+    - markdown-it-sup # 上标
+    - markdown-it-sub # 下标
   anchors:
     level: 1
   inline: false # https://markdown-it.github.io/markdown-it/#MarkdownIt.renderInline
