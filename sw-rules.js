@@ -62,8 +62,7 @@ module.exports.cacheRules = {
         match: url => [
             "cdn.staticfile.org",
             "cdn.staticfile.net",
-            "evan.beee.top",
-            // "jsd.onmicrosoft.cn",
+            "registry.npmmirror.com",
             // "sdk.51.la",
             // "www.clarity.ms",
             // "s4.zstatic.net",
