@@ -33,7 +33,7 @@
     "hexo-swpp": "^3.3.7",
     "hexo-wordcount": "^6.0.1",
     "hexo-yam": "^9.0.0",
-    "nodejieba": "^2.5.2",
+    "nodejieba": "^3.2.0",
     "swpp-backends": "^2.3.12"
   }
 }
