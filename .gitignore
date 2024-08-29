@@ -11,7 +11,21 @@ db.json
 public/
 .deploy*/
 _multiconfig.yml
-node_modules/
+
+# Tools
+t
+t.exe
 
 # Debug & Develop
 themes/redefine_dev/
+.vscode/
+
+# Packages
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+pnpm-lock.yaml
+node_modules/
+
+# Sources
+source/
