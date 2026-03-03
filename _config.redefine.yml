@@ -90,8 +90,17 @@ global:
   preloader:
     enable: false
     custom_message: # Custom message. If empty, the site title will be displayed
+  # Side tools settings
+  side_tools:
+    # Whether to enable gear rotation animation for settings button
+    gear_rotation: true
+    # Whether to auto expand tools list on page load
+    auto_expand: false
   # Whether to enable open graph
-  open_graph: true
+  open_graph:
+    enable: true
+    image: /images/redefine-og.webp  # default og:image
+    description: Hexo Theme Redefine, Redefine Your Hexo Journey.
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
@@ -162,21 +171,27 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: true
+    enable: false
     # Social links style
     style: default # default, reverse, center
     # Social links
     links:
-      github:  # your GitHub URL
-      instagram: # your Instagram URL
-      zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
-      email:  # your email
-      # ...... # you can add more
+      - icon: github # can also be "fa-brands fa-github"
+        url:
+      - icon: twitter
+        url:
+      - icon: email
+        url: you@example.com
+      - icon: telegram
+        url:
+      - icon: /images/custom-icon.svg
+        url:
     # Social links with QRcode drawers
     qrs:
-      weixin:  # your Wechat QRcode image URL
-      # ...... # you can add more
+      - icon: weixin
+        qr:
+      - icon: /images/custom-icon.svg
+        qr:
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -204,18 +219,9 @@ navbar:
       submenus:
         友链: /link/
         留言板: /comment/
-        鸣谢: /thanks/ 
-    手册:
-      icon: fa-regular fa-clipboard-list
-      submenus:
-        问题自查: /help/
-        公告栏: /notice/
     关于:
+      path: /about/
       icon: fa-regular fa-user
-      submenus:
-        关于我: /about/
-        有问必答: /faq/
-        条款与政策: /policy/
     # ...... # you can add more
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
   search:
@@ -273,6 +279,7 @@ articles:
     image_alignment: center # image alignment. left, center
     image_caption: false # Whether to display image caption
     link_icon: true # Whether to display link icon
+    delete_mask: false # Add mask effect to <del> tags, hiding content by default and revealing on hover
     title_alignment: left # Title alignment. left, center
     headings_top_spacing: # Top spacing for headings from h1-h6
       h1: 3.2rem
@@ -320,7 +327,7 @@ articles:
   # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
   recommendation:
     # Whether to enable article recommendation
-    enable: true
+    enable: false
     # Article recommendation title
     title: 推荐阅读
     # Max number of articles to display
@@ -340,7 +347,7 @@ comment:
   # Whether to enable comment
   enable: true
   # Comment system
-  system: waline # waline, gitalk, twikoo, giscus
+  system: twikoo # waline, gitalk, twikoo, giscus, utterances, artalk
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -360,8 +367,8 @@ comment:
       proxy: # GitHub repository proxy
     # Twikoo comment system. See https://twikoo.js.org/
     twikoo:
-      version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
-      server_url: # Twikoo server URL. e.g. https://example.example.com
+      version: 1.6.44 # Twikoo version, do not modify if you dont know what it is
+      server_url: https://vc.tk.api.lynx3.me/ # Twikoo server URL. e.g. https://example.example.com
       region: # Twikoo region. can be empty
     # Giscus comment system. See https://giscus.app/
     giscus:
@@ -376,6 +383,18 @@ comment:
       lang: en # Giscus language. e.g. en, zh-CN, zh-TW
       input_position: bottom # Place the comment box above/below the comments. e.g. top, bottom
       loading: lazy # Load the comments lazily
+    # Artalk comment system. See https://artalk.js.org/
+    artalk:
+      server: # Artalk server URL. e.g. https://artalk.example.com
+      site: # Site name shown in Artalk admin (should match server-side site config)
+    # Utterances comment system. See https://utteranc.es/
+    utterances:
+      repo: # GitHub repository name e.g. owner/repo (Issues must be enabled)
+      issue_term: pathname # pathname, url, title, og:title (recommended: pathname for single-page mode)
+      issue_number: # Use a specific issue number instead of issue_term
+      label: # Optional label for created issues
+      theme_light: github-light # Light theme
+      theme_dark: github-dark # Dark theme
 # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -441,7 +460,10 @@ plugins:
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
     enable: false # enable mermaid or not
-    version: "9.3.0" # default v9.3.0
+    version: "11.4.1" # default v11.4.1
+    theme:
+      light: "default"
+      dark: "dark"
 # PLUGINS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -452,6 +474,10 @@ page_templates:
   friends_column: 2
   # Tags page style
   tags_style: blur # blur, cloud
+  # Masonry page batch size
+  masonry:
+    batch_size: 12
+    initial_batch_size: 24
 # PAGE TEMPLATES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
